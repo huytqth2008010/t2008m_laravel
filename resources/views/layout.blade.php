@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <x-head/>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition light-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+        <img class="animation__wobble" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
     </div>
 
     <!-- Navbar -->
@@ -18,7 +18,7 @@
         <!-- Brand Logo -->
         <a href="index3.html" class="brand-link">
             <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-            <span class="brand-text font-weight-light">AdminLTE </span>
+            <span class="brand-text font-weight-light">AdminLTE 3</span>
         </a>
 
         <!-- Sidebar -->
@@ -29,16 +29,18 @@
     <!-- Content Wrapper. Contains page content -->
     @yield("main")
     <!-- /.content-wrapper -->
-    <x-footer/>
 
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
         <!-- Control sidebar content goes here -->
     </aside>
     <!-- /.control-sidebar -->
+
+    <!-- Main Footer -->
+    <x-footer/>
 </div>
 <!-- ./wrapper -->
 
-<x-scripts/>
+<x-script/>
 </body>
 </html>

@@ -15,5 +15,3 @@ yarn-error.log
 /.vscode
 .idea
 /public/upload/
-/public/dist/
-/public/plugins/

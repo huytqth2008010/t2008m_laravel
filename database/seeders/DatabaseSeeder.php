@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use App\Models\Category;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -14,8 +14,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([
-           CategorySeeder::class
+        // \App\Models\User::factory(10)->create();
+//        $this->call([
+//            CategorySeeder::class
+//        ]);
+        DB::table("admins")->insert([
+            "name"=>"Administrator",
+            "email"=>"admin@gmail.com",
+            "role" => "ADMIN",
+            "password"=>bcrypt("12345678")
         ]);
     }
 }

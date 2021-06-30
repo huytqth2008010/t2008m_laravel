@@ -5,16 +5,10 @@
             <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="/" class="nav-link">Home</a>
+            <a href="index3.html" class="nav-link">Home</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{url("/list-product")}}" class="nav-link">List Product</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{url("/list-category")}}" class="nav-link">List Category</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{url("/list-brand")}}" class="nav-link">List Brand</a>
+            <a href="#" class="nav-link">Contact</a>
         </li>
     </ul>
 
@@ -107,7 +101,7 @@
                 <span class="badge badge-warning navbar-badge">15</span>
             </a>
             <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                <span class="dropdown-header">15 Notifications</span>
+                <span class="dropdown-item dropdown-header">15 Notifications</span>
                 <div class="dropdown-divider"></div>
                 <a href="#" class="dropdown-item">
                     <i class="fas fa-envelope mr-2"></i> 4 new messages
@@ -135,11 +129,6 @@
         <li class="nav-item">
             <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
                 <i class="fas fa-th-large"></i>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="?route=listcart" class="nav-link" role="button">
-                    <i class="fas fa-shopping-cart"></i>
             </a>
         </li>
     </ul>

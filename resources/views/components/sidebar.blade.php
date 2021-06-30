@@ -2,10 +2,10 @@
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-            <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+            <img src="{{asset("dist/img/user2-160x160.jpg")}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-            <a href="#" class="d-block">Admin</a>
+            <a href="#" class="d-block">{{Auth::user()->name}}</a>
         </div>
     </div>
 
@@ -25,32 +25,23 @@
     <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+                 with font-awesome or any other icon font library -->
             <li class="nav-item">
-                <a href="{{url("/list-product")}}" class="nav-link">
-                    <i class="nav-icon fas fa-list-ul"></i>
-                    <p>
-                        List Product
-                        <span class="right badge badge-danger">New</span>
-                    </p>
+                <a href="{{url("admin/")}}" class="nav-link">
+                    <i class="nav-icon far fa-circle text-danger"></i>
+                    <p class="text">Home</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{url("/list-category")}}" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
-                    <p>
-                        List Category
-                        <span class="right badge badge-danger">New</span>
-                    </p>
+                <a href="{{url("admin/categories")}}" class="nav-link">
+                    <i class="nav-icon far fa-circle text-warning"></i>
+                    <p>Categories</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="{{url("/list-brand")}}" class="nav-link">
-                    <i class="nav-icon fas fa-th"></i>
-                    <p>
-                        List Brand
-                        <span class="right badge badge-danger">New</span>
-                    </p>
+                <a href="{{url("admin/products")}}" class="nav-link">
+                    <i class="nav-icon far fa-circle text-info"></i>
+                    <p>Products</p>
                 </a>
             </li>
         </ul>
